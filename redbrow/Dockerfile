@@ -1,8 +1,20 @@
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
-EXPOSE 5265
 
-COPY bin/Release/net7.0/publish .
+COPY *.csproj ./
+
+RUN dotnet restore
+COPY . ./
+
+RUN dotnet publish -c Realease -o out
+
+
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
+
+WORKDIR /app
+
+
+COPY --from=build /app/out ./
 
 ENTRYPOINT ["dotnet", "redbrow.dll"]

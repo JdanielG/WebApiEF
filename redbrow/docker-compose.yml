@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+    redbrow:
+        container_name: redbrowapp
+        image: redbrow/redbrow
+        build: .
+        ports:
+            - "8088:80"
+        environment:
+            ConnectionString__WebDatabase: "Host=db;Database=postgres;Username=postgres;Password=postgres;"
+        depends_on:
+            - db
+
+    db:
+        container_name: db
+        image: postgres
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_DB: postgres
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+
+volumes:
+    pgdata: {}
