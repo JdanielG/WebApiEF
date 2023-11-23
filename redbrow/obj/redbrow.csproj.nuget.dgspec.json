@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jonathangarcia/Projects/redbrow/redbrow/redbrow.csproj": {}
+    "/Users/jonathangarcia/Projects/redbrow/webApiEF/redbrow/redbrow.csproj": {}
   },
   "projects": {
-    "/Users/jonathangarcia/Projects/redbrow/redbrow/redbrow.csproj": {
+    "/Users/jonathangarcia/Projects/redbrow/webApiEF/redbrow/redbrow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jonathangarcia/Projects/redbrow/redbrow/redbrow.csproj",
+        "projectUniqueName": "/Users/jonathangarcia/Projects/redbrow/webApiEF/redbrow/redbrow.csproj",
         "projectName": "redbrow",
-        "projectPath": "/Users/jonathangarcia/Projects/redbrow/redbrow/redbrow.csproj",
+        "projectPath": "/Users/jonathangarcia/Projects/redbrow/webApiEF/redbrow/redbrow.csproj",
         "packagesPath": "/Users/jonathangarcia/.nuget/packages/",
-        "outputPath": "/Users/jonathangarcia/Projects/redbrow/redbrow/obj/",
+        "outputPath": "/Users/jonathangarcia/Projects/redbrow/webApiEF/redbrow/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jonathangarcia/.nuget/NuGet/NuGet.Config"

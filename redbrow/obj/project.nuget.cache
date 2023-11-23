@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bcw0bvf2E4BBTaiYmrly+h4R033aHz0PBGAaD6oYpWRTGyPek9R828OdqM2gGcZ+CFZcZjFnC0w+JGE0B3WraA==",
+  "dgSpecHash": "tzpfh35nskVaYm1tRncyg333WHtnAQjnMWvYPYDbbqz1Vg6YPPf04BAUWhfnos26pmay8B6rRxJQ50T8Arb1FA==",
   "success": true,
-  "projectFilePath": "/Users/jonathangarcia/Projects/redbrow/redbrow/redbrow.csproj",
+  "projectFilePath": "/Users/jonathangarcia/Projects/redbrow/webApiEF/redbrow/redbrow.csproj",
   "expectedPackageFiles": [
     "/Users/jonathangarcia/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/jonathangarcia/.nuget/packages/microsoft.entityframeworkcore/7.0.5/microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
