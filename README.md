@@ -1,17 +1,20 @@
 # webApiEF
 Aplicacion webAPI en C# y .Net 7, con postgres
 
-Se debe descargar docker en postgres para revisar el funcionamiento
+Puedes correr el contenedor utilizando
+$ docker-compose up --build
 
-$ docker pull postgres
-$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+Para obtener informacion puedes utilizar el metodo Get
+http://localhost:8088/api/usuarios/
 
-$ psql --command "CREATE USER useredbrow WITH SUPERUSER PASSWORD 'redbrow2111';" && \
-    createdb -O useredbrow redbrow
+Para guardar informacion puedes utilizar el metodo Post y mandar el json
+http://localhost:8088/api/usuarios/
+{
+    "Nombre":"Daniel",
+    "Correo":"daniel@123.com",
+    "Edad":30
+}
 
-Posteriormente realizar las migraciones necesarias para crear los esquemas
-
-$ dotnet-ef migrations add
-
-$ dotnet-ef migrations update
-
+Para obtener respuestas paginadas debes enviar los parametros 
+http://localhost:8088/api/usuarios?pagina=1&elementosPorPagina=5
+por default envia 5 elementos por pagina
